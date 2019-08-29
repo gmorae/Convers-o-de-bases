@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Converter bases</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
+        <a class="navbar-brand" href="#">Conversões</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Decimal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Binário
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Octa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hexadecimal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="mt-5">
+            <h1>Conversão de bases</h1>
+            <form class="mt-5">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="numero" placeholder="Número">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="base" placeholder="Base para converter">
+                </div>
+                <button type="button" class="btn btn-outline-primary waves-effect  mt-5" onclick="mudar()">Mudar</button>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        function mudar() {
+            var numero = document.getElementById('numero').value
+            var base = document.getElementById('base').value
+            var num = parseInt(numero)
+            if (base == "bin") {
+                alert("valor na " + base + " = " + (num).toString(2))
+            } else {
+                if (base == "octa") {
+                    alert("valor na " + base + " = " + (num).toString(8))
+                } else {
+                    alert("valor na " + base + " = " + (num).toString(16))
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+</body>
+
+</html>
