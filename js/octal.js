@@ -4,16 +4,22 @@ function mudar() {
     var resultado = document.getElementById("resultado")
     var num = parseInt(numero)
     if (base == "binario") {
-        var rs = (num).toString(2)
+        var rs = parseInt(numero, 8).toString(2);
         resultado.innerText = "Valor na base " + base + " = " + rs;
     } else {
         if (base == "decimal") {
-            var rs = (num).toString(10)
+            var rs = parseInt(numero, 8).toString(10);
             resultado.innerText = "Valor na base " + base + " = " + rs;
 
         } else {
-            var rs = (num).toString(16)
-            resultado.innerText = "Valor na base " + base + " = " + rs;
+            if (base == "hexadecimal") {
+                var rs = parseInt(numero, 8).toString(16);
+                resultado.innerText = "Valor na base " + base + " = " + rs;
+
+            } else {
+                resultado.innerText = "Algo de errado não está certo"
+
+            }
 
         }
     }

@@ -6,66 +6,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <style>
-        .form-control {
+        h1 {
+            text-align: center;
+        }
+        
+        .btn {
             border-radius: 20px;
         }
         
-        .alert-danger {
-            padding-left: 5px;
+        .container {
+            margin-top: 120px;
         }
     </style>
 </head>
 
 <body>
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
-        <a class="navbar-brand" href="#">Conversões de bases</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Decimal</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="bin.html">Binário
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="octa.html">Octa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hexa.html">Hexadecimal</a>
-                </li> -->
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="mt-5">
-            <h1>Conversão de bases</h1>
-            <h3 class="mt-5">Nome das bases</h3>
-            <p>Decimal</p>
-            <p>Binario</p>
-            <p>Octal</p>
-            <p>Hexadecimal</p>
-            <form class="mt-5">
-                <div class="form-group">
-                    <p class="alert-danger" style="width: 260px; border-radius: 20px;">A base deve ser escrita em decimal</p>
-                    <input type="text" class="form-control" id="numero" placeholder="Número">
-                </div>
+    <div class="container mt-5">
 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="base" placeholder="Converter para">
-                </div>
-                <div id="resultado"></div>
-                <button type="button" class="btn btn-outline-primary waves-effect  mt-5" onclick="mudar()">Mudar</button>
-
-            </form>
+        <h1 style="font-family: 'Monoton', cursive;">Conversão de bases</h1>
+        <div class="row mt-5">
+            <div class="mx-auto mt-5">
+                <button class="btn btn-outline-primary waves-effect"><a href="decimal.html">Decimal</a></button>
+                <button class="btn btn-outline-primary waves-effect"><a href="bin.html">Binario</a></button>
+                <button class="btn btn-outline-primary waves-effect"><a href="octa.html">Octal</a></button>
+                <button class="btn btn-outline-primary waves-effect"><a href="hexa.html">Hexadecimal</a></button>
+            </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/decimal.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>

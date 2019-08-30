@@ -2,18 +2,19 @@ function mudar() {
     var numero = document.getElementById('numero').value
     var base = document.getElementById('base').value
     var resultado = document.getElementById("resultado")
-    var num = parseInt(numero)
     if (base == "binario") {
-        var rs = (num).toString(2)
-        resultado.innerText = "Valor na base " + base + " = " + rs;
+        var hex = numero;
+        var dec = parseInt(hex, 16).toString(2);
+        resultado.innerText = "Valor na base " + base + " = " + dec;
     } else {
         if (base == "octal") {
-            var rs = (num).toString(8)
-            resultado.innerText = "Valor na base " + base + " = " + rs;
-
+            var hex = numero;
+            var dec = parseInt(hex, 16).toString(8);
+            resultado.innerText = "Valor na base " + base + " = " + dec;
         } else {
-            var rs = (num).toString(10)
-            resultado.innerText = "Valor na base " + base + " = " + rs;
+            var hex = numero;
+            var dec = parseInt(hex, 16).toString(10);
+            resultado.innerText = "Valor na base " + base + " = " + dec;
 
         }
     }
