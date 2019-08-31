@@ -21,13 +21,17 @@
         .container {
             margin-top: 120px;
         }
+
+        footer {
+            margin-top: 50px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container mt-5">
 
-        <h1 style="font-family: 'Monoton', cursive;">Conversão de bases</h1>
+        <h1 style="font-family: 'Monoton', cursive;">Bem-vindo ao site <br>de <br> conversão de bases</h1>
         <div class="row mt-5">
             <div class="mx-auto mt-5">
                 <button class="btn btn-outline-primary waves-effect"><a href="decimal.html">Decimal</a></button>
@@ -37,6 +41,17 @@
             </div>
         </div>
     </div>
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3"><p id="date"></p> 
+            <a href="https://mdbootstrap.com/education/bootstrap/"> Gabriel Moraes Martins</a>
+        </div>
+    </footer>
+    <script>
+        let year = new Date();
+        var ano = year.getFullYear()
+        document.getElementById("date").innerHTML = "©" + ano +"Copyright:"
+
+    </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
