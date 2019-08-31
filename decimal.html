@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Base decimal</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -11,11 +13,11 @@
         .form-control {
             border-radius: 20px;
         }
-        
+
         .alert-danger {
             padding-left: 5px;
         }
-        
+
         h1 {
             text-align: center;
         }
@@ -25,7 +27,8 @@
 <body>
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
         <a class="navbar-brand" href="#">Conversões de bases</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
@@ -46,7 +49,8 @@
             <p>Hexadecimal</p>
             <form class="mt-5">
                 <div class="form-group">
-                    <p class="alert-danger" style="width: 330px; border-radius: 20px; font-size: 20px;">A base deve ser escrita em decimal</p>
+                    <p class="alert-danger" style="width: 330px; border-radius: 20px; font-size: 20px;">A base deve ser
+                        escrita em decimal</p>
                     <input type="text" class="form-control" id="numero" placeholder="Número">
                 </div>
 
@@ -54,16 +58,20 @@
                     <input type="text" class="form-control" id="base" placeholder="Converter para">
                 </div>
                 <div id="resultado"></div>
-                <button type="button" class="btn btn-outline-primary waves-effect  mt-5" onclick="mudar()">Mudar</button>
+                <button type="button" class="btn btn-outline-primary waves-effect  mt-5"
+                    onclick="mudar()">Mudar</button>
 
             </form>
         </div>
     </div>
     <script type="text/javascript" src="js/decimal.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
 </body>
 
 </html>
