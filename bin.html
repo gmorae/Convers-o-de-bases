@@ -9,55 +9,59 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
-    <style>
-        .form-control {
-            border-radius: 20px;
-        }
-        
-        .alert-danger {
-            padding-left: 5px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
-        <a class="navbar-brand" href="#">Conversões de bases</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
+            <a class="navbar-brand" href="index.html">Conversões de bases</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="mt-5">
-            <h1>Conversão de bases</h1>
-            <h3 class="mt-5">Nome das bases</h3>
-            <p>Decimal</p>
-            <p>Binario</p>
-            <p>Octal</p>
-            <p>Hexadecimal</p>
-            <form class="mt-5">
-                <div class="form-group">
-                    <p class="alert-danger" style="width: 260px; border-radius: 20px;">A base deve ser escrita em binario
-                    </p>
-                    <input type="text" class="form-control" id="numero" placeholder="Número">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="mt-5">
+                    <h1>Base Binária</h1>
+                    <form class="mt-5">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numero" placeholder="Escreva o número para transformar">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select id="base" class="browser-default custom-select">
+                                    <option selected>Converter para: </option>
+                                    <option value="Decimal">Decimal</option>
+                                    <option value="Octal">Octal</option>
+                                    <option value="Hexadecimal">Hexadecimal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="resultado"></div>
+                        <button type="button" class="btn btn-outline-primary waves-effect  mt-5" onclick="mudar()">Transformar</button>
+                    </form>
                 </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control" id="base" placeholder="Converter para">
-                </div>
-                <div id="resultado"></div>
-                <button type="button" class="btn btn-outline-primary waves-effect  mt-5" onclick="mudar()">Mudar</button>
-
-            </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">
+            <p id="date"></p>
+            <a href="https://github.com/gmorae" target="_blanck"><img src="imagens/git.png" alt="Logo do github com um link para o repositorio do desenvolvedor do site"> </a>
         </div>
-    </div>
+    </footer>
+    <script type="text/javascript" src="js/rodape.js"></script>
     <script type="text/javascript" src="js/bin.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>

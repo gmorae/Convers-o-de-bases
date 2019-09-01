@@ -3,62 +3,53 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Base decimal</title>
+    <title>Transaformações de base</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        h1 {
-            text-align: center;
-        }
-
-        .btn {
-            border-radius: 20px;
-        }
-
-        .container {
+        header {
             margin-top: 120px;
-        }
-
-        footer {
-            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5">
-
-        <h1 style="font-family: 'Monoton', cursive;">Bem-vindo ao site <br>de <br> conversão de bases</h1>
-        <div class="row mt-5">
-            <div class="mx-auto mt-5">
-                <button class="btn btn-outline-primary waves-effect"><a href="decimal.html">Decimal</a></button>
-                <button class="btn btn-outline-primary waves-effect"><a href="bin.html">Binario</a></button>
-                <button class="btn btn-outline-primary waves-effect"><a href="octa.html">Octal</a></button>
-                <button class="btn btn-outline-primary waves-effect"><a href="hexa.html">Hexadecimal</a></button>
+    <header>
+        <h1>Bem-vindo ao site de <br> conversão de bases</h1>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto">
+                        <h2 class="text-center mt-5">Escolha a sua base: </h2>
+                        <button class="btn btn-outline-primary waves-effect botao"><a href="decimal.html">Decimal</a></button>
+                        <button class="btn btn-outline-primary waves-effect botao"><a href="bin.html">Binário</a></button>
+                        <button class="btn btn-outline-primary waves-effect botao"><a href="octa.html">Octal</a></button>
+                        <button class="btn btn-outline-primary waves-effect botao"><a href="hexa.html">Hexadecimal</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">
+            <p id="date"></p>
+            <div class="logos">
+                <a href="https://github.com/gmorae" class="ml-3" target="_blanck"><img src="imagens/git.png" alt="Logo do github com um link para o repositorio do desenvolvedor do site"> </a>
+                <a href="https://github.com/gmorae" class="ml-3" target="_blanck"><img src="imagens/in.png" alt="Logo do github com um link para o repositorio do desenvolvedor do site"> </a>
             </div>
         </div>
-    </div>
-    <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3"><p id="date"></p> 
-            <a href="https://mdbootstrap.com/education/bootstrap/"> Gabriel Moraes Martins</a>
-        </div>
     </footer>
-    <script>
-        let year = new Date();
-        var ano = year.getFullYear()
-        document.getElementById("date").innerHTML = "©" + ano +"Copyright:"
-
-    </script>
+    <script type="text/javascript" src="js/rodape.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
 </body>
 
 </html>

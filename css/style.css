@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+.form-control,
+.browser-default,
+option {
+    border-radius: 20px;
+}
+
+footer img {
+    width: 40px;
+}

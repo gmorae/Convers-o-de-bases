@@ -3,16 +3,16 @@ function mudar() {
     var base = document.getElementById('base').value
     var resultado = document.getElementById("resultado")
     var num = parseInt(numero)
-    if (base == "binario") {
+    if (base == "Binária") {
         var rs = parseInt(numero, 8).toString(2);
         resultado.innerText = "Valor na base " + base + " = " + rs;
     } else {
-        if (base == "decimal") {
+        if (base == "Decimal") {
             var rs = parseInt(numero, 8).toString(10);
             resultado.innerText = "Valor na base " + base + " = " + rs;
 
         } else {
-            if (base == "hexadecimal") {
+            if (base == "Hexadecimal") {
                 var rs = parseInt(numero, 8).toString(16);
                 resultado.innerText = "Valor na base " + base + " = " + rs;
 
