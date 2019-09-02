@@ -41,3 +41,11 @@ footer img {
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
+.mx-auto {
+    margin: 0 auto
+}
+
+.yellow {
+    background: #ffbb33;
+}

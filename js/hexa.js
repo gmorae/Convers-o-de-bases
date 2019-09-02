@@ -3,27 +3,27 @@ function mudar() {
     var base = document.getElementById('base').value
     var resultado = document.getElementById("resultado")
     if (base == "Binária") {
-        var dec = parseInt(numero, 16).toString(2)
-        if (Number.isNaN == true) {
-            resultado.innerText = "Valor está incorreto"
+        var hexa = parseInt(numero, 16).toString(2)
+        if (isNaN(hexa)) {
+            resultado.innerText = "Valor incorreto"
         } else {
-            resultado.innerText = "Valor na base " + base + " = " + dec;
+            resultado.innerText = "Valor na base " + base + " = " + hexa
         }
     } else {
         if (base == "Octal") {
-            var dec = parseInt(numero, 16).toString(8);
-            if (Number.isNaN == true) {
-                resultado.innerText = "Valor está incorreto"
+            var hexa = parseInt(numero, 16).toString(8)
+            if (isNaN(hexa)) {
+                resultado.innerText = "Valor incorreto"
             } else {
-                resultado.innerText = "Valor na base " + base + " = " + dec;
+                resultado.innerText = "Valor na base " + base + " = " + hexa
             }
         } else {
             if (base == "Decimal") {
-                var dec = parseInt(numero, 16).toString(10);
-                if (Number.isNaN == true) {
-                    resultado.innerText = "Valor está incorreto"
+                var hexa = parseInt(numero, 16).toString(10)
+                if (isNaN(hexa)) {
+                    resultado.innerText = "Valor incorreto"
                 } else {
-                    resultado.innerText = "Valor na base " + base + " = " + dec;
+                    resultado.innerText = "Valor na base " + base + " = " + hexa
                 }
             }
         }
